@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>GithubUserDemo</title>
+</head>
+<body ng-controller="GithubCtrl">
+    
+    <h1>Github Users</h1>
+    <ul>
+        <li ng-reapeat="user in users">
+            <!--<a href="https://github.com/{{user.login}}">-->
+            <a href="{{user.html_url}}">
+            {{user.login}}
+            </ul>
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
